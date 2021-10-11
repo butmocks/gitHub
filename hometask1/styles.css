@@ -1,27 +1,34 @@
-li {
-  margin-bottom: 16px;
+a:link {
+  background-color: black;
+  color: white;
 }
 
-a[target="_blank"] {
-  border: 2px solid black;
-}
-
-a[href^="broken"] {
-  border: 2px solid red;
-}
-
-a[href$=".com"] {
-  margin-left: 50px;
-}
-
-a[lang*="en"] {
-  font-size: 10px;
-}
-
-a[href*="www"] {
+a:visited {
+  background-color: orange;
   color: green;
 }
 
-a[title*="popular"] {
+a:active, .some-button:active {
+  border: 3px solid red;
+}
+
+a:hover {
   font-size: 24px;
+}
+
+.some-button:disabled {
+  border: 2px dashed grey;
+}
+
+.some-button:enabled:hover {
+  color: white;
+  background-color: grey;
+}
+
+.search:focus {
+  background-color: orange;
+}
+
+.confirm-checkbox:checked {
+  margin-left: 20px;
 }
