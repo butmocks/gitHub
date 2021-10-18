@@ -2,34 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Псевдоэлементы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+
+      .task {
+        width: 512px;
+        height: 128px;
+        border: 8px solid black;
+        margin: 16px;
+        padding: 16px;
+      }
+
+      .task1 {
+        box-sizing: content-box;
+        background-color: aquamarine;
+      }
+
+      .task2 {
+        background-color: azure;
+        box-sizing: border-box;
+      }
+      
+    </style>
   </head>
-
   <body>
-    <h1>Псевдоэлементы</h1>
-
-    <section>
-      <h2>Anchor - используются для ссылок</h2>
-      <a class="anchor" href="#">I am a link</a>
-    </section>
-
-    <section>
-      <h2>Пользовательские действия</h2>
-      <button class="some-button">Hover and click me</button>
-      <button disabled class="some-button">Disabled button</button>
-    </section>
-
-    <section>
-      <h2>Инпуты</h2>
-      <input type="text" class="search" />
-      <input type="checkbox" class="confirm-checkbox" />
-    </section>
+    <div class="task1 task">'Content Box Sizing'</div>
+    <div class="task2 task">'Border Box Sizing'</div>
   </body>
 </html>
