@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  float: left;
+  width: 50%;
+  background-color: aquamarine;
+}
+
+.red {
+  background-color: red;
+  float: right;
+}
+
+.green {
+  background-color: green;
+  float: left;
+}
+
+footer {
+  height: 30px;
+  border: 2px solid black;
+  clear: both;
+}
