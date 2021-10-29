@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+      .header {
+        height: 40px;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+      }
+
+      .footer {
+        height: 40px;
+        background-color: green;
+        display: flex;
+      }
+
+      .navigation {
+        margin: 0;
+        display: flex;
+        list-style-type: none;
+      }
+
+      .navigation_item {
+        margin-right: 10px;
+      }
+
+      .footer_text {
+        margin: auto;
+      }
+
+      .page {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .content {
+        flex-grow: 1;
+        display: flex;
+      }
+
+      .dashboard {
+        display: flex;
+        flex-grow: 1;
+        background-color: pink;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .news {
+        width: 200px;
+        background-color: grey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav>
+          <ul class="navigation">
+            <li class="navigation_item">About</li>
+            <li class="navigation_item">Products</li>
+            <li class="navigation_item">Contacts</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="content">
+        <section class="dashboard">
+          <h2>I can use Flexbox!!!</h2>
+        </section>
+        <aside class="news">
+          <h2>News</h2>
+          <ul>
+            <li>News 1</li>
+            <li>News 2</li>
+            <li>News 3</li>
+          </ul>
+        </aside>
+      </main>
+      <footer class="footer"><span class="footer_text">Footer</span></footer>
+    </div>
+  </body>
+</html>
