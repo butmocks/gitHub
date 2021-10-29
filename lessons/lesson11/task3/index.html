@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .dropdawn {
+        position: relative;
+        margin: 16px;
+        background-color: darkgreen;
+        color: white;
+        display: inline-block;
+        padding: 8px;
+        border-radius: 4px;
+        height: 34px;
+        cursor: pointer;
+      }
+
+      .dropdawn_list {
+        position: absolute;
+        top: 34px;
+        color: black;
+        list-style-type: none;
+        background-color: wheat;
+        padding: 0;
+        margin: 0;
+        display: none;
+        min-width: 120px;
+      }
+
+      .dropdawn_list-item {
+        padding: 8px;
+      }
+
+      .dropdawn:hover .dropdawn_list {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdawn">
+      <span class="dropdawn_text">Hover me</span>
+      <ul class="dropdawn_list">
+        <li class="dropdawn_list-item">Item 1</li>
+        <li class="dropdawn_list-item">Item 2</li>
+        <li class="dropdawn_list-item">Item 3</li>
+      </ul>
+    </div>
+  </body>
+</html>
