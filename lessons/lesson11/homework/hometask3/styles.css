@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+  padding: 16px;
+  position: relative;
+  margin: 16px;
+  background-color: darkgreen;
+  opacity: 0.8;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  opacity: 1;
+}
+.dropdown:hover .menu-list {
+  display: block;
+}
+
+.menu-list {
+  padding: 0;
+  background-color: lightcyan;
+  color: black;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 2);
+  position: absolute;
+  min-width: 120px;
+  z-index: 1;
+  display: none;
+  margin-left: -16px;
+}
+
+.menu-item {
+  padding: 16px;
+  list-style-type: none;
+}
+
+.menu-item:hover {
+  background-color: ghostwhite;
+}
+
+
+/* 
+.dropdawn_list {
+  position: absolute;
+  top: 34px;
+  color: black;
+  list-style-type: none;
+  background-color: wheat;
+  padding: 0;
+  margin: 0;
+  display: none;
+  min-width: 120px;
+}
+
+.dropdawn_list-item {
+  padding: 8px;
+}
+
+.dropdawn:hover .dropdawn_list {
+  display: block;
+} */
