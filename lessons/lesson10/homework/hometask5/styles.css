@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.articles-list {
+  margin: 8px;
+  padding: 16px;
+  background-color: bisque;
+}
+.article {
+  display: flex;
+  flex-basis: 300px;
+  flex-grow: 1;
+}
