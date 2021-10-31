@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  cursor: all-scroll;
+}
+
+.thumb {
+  display: inline-block;
+  margin: 8px;
+}
