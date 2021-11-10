@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .image-container {
+        display: flex;
+        margin: 50px 0px;
+        justify-content: center;
+      }
+
+      .main-image {
+        max-width: 100%;
+        border-radius: 20px;
+      }
+
+      .gallery {
+        display: flex;
+      }
+
+      .card {
+        margin: 16px;
+        box-shadow: 0px 7px 18px -8px rgba(0, 0, 0, 0.75);
+      }
+
+      .caption {
+        text-transform: lowercase;
+        line-height: 30px;
+        text-align: center;
+      }
+
+      .opacity-image {
+        filter: opacity(50%);
+      }
+
+      .blur-image {
+        filter: blur(4px);
+      }
+
+      .invert-image {
+        filter: invert(100%);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img
+        class="main-image"
+        src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg"
+        alt="Field and tree"
+      />
+    </div>
+    <div class="gallery">
+      <figure class="card">
+        <img
+          class="opacity-image"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg"
+          alt="Opacity"
+        />
+        <figcaption class="caption">Opacity</figcaption>
+      </figure>
+      <figure class="card">
+        <img
+          class="blur-image"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg"
+          alt="Blur"
+        />
+        <figcaption class="caption">Blur</figcaption>
+      </figure>
+      <figure class="card">
+        <img
+          class="invert-image"
+          src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg"
+          alt="Invert"
+        />
+        <figcaption class="caption">invert</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
