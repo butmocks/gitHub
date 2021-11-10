@@ -15,6 +15,5 @@
 
 
 .gallery {
-  display: inline-flex;
-  background-size: contain;
+  display: flex;
 }
