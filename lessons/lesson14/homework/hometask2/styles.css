@@ -1,9 +1,10 @@
 
 .rectangle {
-  background-color: blueviolet !importnt;
+  background-color: blueviolet !important;
 }
 
 p.text::first-letter {
-  color: green;
+  
   font-size: 24px;
+  color: green;
 }
