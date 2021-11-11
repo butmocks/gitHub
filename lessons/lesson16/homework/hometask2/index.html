@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      .form-control {
-        margin: 16px;
-      }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+
   </head>
   <body>
     <form>
@@ -17,21 +15,21 @@
         <input type="text" id="last-name-form-control" name="lastName" value="Emerson" readonly/>
       </div>
       <div class="form-control">
-        <label for="">Age</label>
-        <input type="number" min="3" max="10" value="17" required/>
+          <label for="">Age</label>
+        <input type="number" name="age" min="3" max="10" value="17" required/>
       </div>
       <div class="form-control">
-        <label>
-          <input type="checkbox" name="agree" disabled/>
-          Accept therms and conditions
+        <label for="checkbox-control">
+          <input type="checkbox" id="checkbox-control" name="agree" disabled/>
+          Accept terms and conditions
         </label>
       </div>
-      <div class="form-control">
+      <div class="choose-gender">
         <input type="radio" id="gender-male" name="gender" />
         <label for="gender-male">Male</label>
-        <input type="radio" id="gender-female" name="gender" checked/>
+        <input type="radio" id="gender-female" name="gender"/>
         <label for="gender-female">Female</label>
-        <input type="radio" id="gender-secret" name="gender" />
+        <input type="radio" id="gender-secret" name="gender" checked />
         <label for="gender-secret">Secret</label>
       </div>
       <div class="form-control">
