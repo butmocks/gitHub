@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<style>
+    .row {
+        display: flex;
+    }
+
+    .bird_small {
+        width: 64px;
+        height: 64px;
+    }
+
+    .bird_large {
+        width: 320px;
+        height: 320px;
+
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+    }
+
+</style>
+</head>
+<body>
+
+    <div class="row">
+        <div class="column">
+            <img class="bird_small" src="image.png" alt="PNG small image">
+            <img class="bird_large" src="image.png" alt="PNG large image">
+        </div>
+        <div class="column">
+            <img class="bird_small" src="image.svg" alt="SVG small image">
+            <img class="bird_large" src="image.svg" alt="SVG large image">
+        </div>
+
+    </div>
+</body>
+</html>
