@@ -25,7 +25,7 @@
   }
 
   .idea {
-    font-size: 24px;
+
     text-transform: uppercase;
     font-weight: 700;
     padding: 4px;
@@ -33,5 +33,5 @@
     margin: auto;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
   }
