@@ -9,19 +9,19 @@
   .gallery {
     display: flex;
     width: 80%;
-    background-color: coral;
+    background-color: #fa5;
   }
 
   .ideas {
     width: 20%;
-    background-color: aqua;
+    background-color: #5af;
     display: flex;
   }
 
   .image {
     max-width: 100%;
     margin: auto;
-    box-shadow: 0px 10px 19px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
   .idea {
@@ -29,9 +29,9 @@
     text-transform: uppercase;
     font-weight: 700;
     padding: 4px;
-    color: white;
+    color: #fff;
     margin: auto;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
+    text-overflow:ellipsis;
   }
