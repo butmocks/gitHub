@@ -4,6 +4,11 @@ main {
 }
 
 img {
+
   max-width: 100%;
-  margin: auto;
 }
+
+picture {
+    margin: auto;
+}
+
