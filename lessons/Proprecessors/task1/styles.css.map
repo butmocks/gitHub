@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "styles/index.scss",
+    "styles/header.scss",
+    "styles/variables.scss"
+  ],
+  "names": [],
+  "mappings": "AACA;EACE;EACA;EACA;;;ACFF;EACC;EACA,kBCIY;;ADFZ;EACC;EACA;EACA;EACA;;AAEA;EACC,kBCNe;EDOf,eCVa;EDWb,SCbI;EDcJ,aCdI;EDeJ,OCNoB;EDOpB;;AAEA;EACC;;AAGD;EACC,kBCnBY;;;AFEhB;EACE,WERe;EFSf",
+  "file": "styles.css"
+}

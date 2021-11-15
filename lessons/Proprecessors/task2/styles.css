@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (orientation: landscape) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.container .square {
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  background-color: #ff7f50;
+}
+
+@media (min-width: 600px) {
+  .container .square {
+    background-color: #8a2be2;
+  }
+}
+
+@media (min-width: 900px) {
+  .container .square {
+    background-color: #a61;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container .square {
+    background-color: #c47;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,30 @@
+@import 'variables.scss';
+
+.header__navigation {
+    height: $unit * 7;
+    background-color: $color-grey;
+
+    .nav-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+
+    &__item {
+      background-color: $color-secondary;
+      border-radius: $border-radius;
+      padding: $unit;
+      margin-left: $unit;
+      color: $text-color-secondary;
+      font-weight: 700;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &_selected {
+        background-color: $color-primary;
+      }
+    }
+  }
+}
