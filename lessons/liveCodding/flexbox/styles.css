@@ -3,22 +3,26 @@
   display: flex;
   flex-direction: column;
 }
+
 .products {
   display:flex;
   flex-direction: column;
 }
+
 .navigation {
   display: flex;
   flex: 1;
   background-color: #ff7f50;
   min-height: 200px;
 }
+
 .products-list {
   display: flex;
   flex: 1;
   background-color: #006400;
   min-height: 200px;
 }
+
 .news {
   display: flex;
   flex: 1;
