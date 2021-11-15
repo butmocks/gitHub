@@ -26,6 +26,10 @@ html {
   list-style-type: none;
 }
 
+.header .menu__item_active {
+    color: yellow;
+  }  
+
 .header .menu__item {
   min-height: 100%;
   color: #fff;
@@ -33,9 +37,6 @@ html {
   cursor: pointer;
 }
 
-.header .menu__item_active {
-  color: yellow;
-}
 
 .header .menu__item_active:hover .submenu {
   display: block;

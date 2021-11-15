@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "styles/navigation.scss",
+    "styles/products.scss",
+    "styles/index.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACE;EACA;EACA;;AACA;EACE;EACA;EACA;EACA;;AAGF;EACE;;AAGF;EAEE;EACA;;AAGF;EACE;;;AAIJ;EACE;EACA;EACA;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;;;ACvCF;EACE;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;;AAGF;EACE;EACA;;AAGF;EACE;EACA;;AAGF;EACE;EACA;EACA;;;AAIJ;EACE;IACE;;;AAIJ;EACE;IACE;;;ACvCJ;EACE;;;AAGF;EACE;EACA;EACA;EACA",
+  "file": "styles.css"
+}
