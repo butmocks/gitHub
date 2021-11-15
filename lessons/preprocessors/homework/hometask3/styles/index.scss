@@ -1,14 +1,14 @@
-@import 'variables.scss';
+@import 'header.scss';
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
-  font-family: $ff;
-  font-size: $fz;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
 }
 
-@import 'header.scss';
+body {
+  height: 100em;
+}
