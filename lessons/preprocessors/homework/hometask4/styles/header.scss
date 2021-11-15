@@ -4,22 +4,26 @@
   display: flex;
   flex-direction: column;
 }
+
 .products {
   display: flex;
   flex-direction: column;
 }
+
 .navigation {
   display: flex;
   flex: 1;
   background-color: $color-primary;
   min-height: $unit * 50;
 }
+
 .products-list {
   display: flex;
   flex: 1;
   background-color: $color-secondary;
   min-height: $unit * 50;
 }
+
 .news {
   display: flex;
   flex: 1;
