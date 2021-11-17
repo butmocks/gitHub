@@ -8,8 +8,8 @@
 
 // console.log('Result: ' + sum);
 
-//================
-// 
+//= ===============
+//
 
 // let m = 10;
 // let n = 20;
@@ -24,17 +24,33 @@
 
 // console.log('Result: ' + result)
 
-//=========
+//= ========
 
-let m = 10;
-const n = 20;
+// let m = 10;
+// const n = 20;
+// let result = 1;
+
+// do {
+//     if (m % 2 === 1) {
+//         result *= m;
+//     }
+//     m++
+// } while (m <= n);
+
+// console.log('Result: ' + result)
+
+//= ======
+
+const m = 1;
+const n = 15;
+let c = m;
 let result = 1;
 
-do {
-    if (m % 2 === 1) {
-        result *= m;
-    }
-    m++
-} while (m <= n);
+while (c <= n) {
+  if (c % 2 === 1) {
+    result *= c;
+  }
+  c += 1;
+}
 
-console.log('Result: ' + result)
+console.log(result);

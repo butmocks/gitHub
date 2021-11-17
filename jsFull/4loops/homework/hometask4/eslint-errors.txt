@@ -1,0 +1,10 @@
+indent
+no-var
+no-trailing-spaces
+eqeqeq
+no-undef
+no-plusplus
+no-return-assign
+no-multiple--empty-lines
+eol-last
+no-console

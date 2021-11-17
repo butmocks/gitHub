@@ -6,4 +6,4 @@ while (n > 0) {
   n -= 1;
 }
 
-console.log('Result: ' + sum);
+console.log(`Result: ${sum}`);
