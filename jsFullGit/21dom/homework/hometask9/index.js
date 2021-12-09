@@ -33,3 +33,4 @@ function finishList() {
   specLi.after(liElemSixth);
 }
 finishList();
+export { finishList }
