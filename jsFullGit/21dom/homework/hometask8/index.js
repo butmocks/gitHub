@@ -6,4 +6,5 @@ function createButton(buttonText) {
   element.append(button);
 }
 const buttonText = 'Send email';
+export { createButton }
 // createButton(buttonText);
