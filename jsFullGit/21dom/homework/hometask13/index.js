@@ -4,5 +4,5 @@ function getSection(num) {
   return result;
 }
 
-getSection();
+// getSection();
 export { getSection };

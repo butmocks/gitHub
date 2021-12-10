@@ -6,6 +6,6 @@ function squaredNumbers() {
   });
 }
 
-squaredNumbers();
+// squaredNumbers();
 
 export { squaredNumbers };
