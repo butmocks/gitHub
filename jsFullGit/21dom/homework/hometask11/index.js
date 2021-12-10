@@ -6,5 +6,5 @@ function manageClasses() {
     document.querySelector('.four').classList.add('another-class');
   }
 }
-manageClasses();
+// manageClasses();
 export { manageClasses };
