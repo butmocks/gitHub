@@ -1,10 +1,9 @@
-function squaredNumbers() {
-  const square = document.querySelectorAll('li[data-number]');
-  square.forEach(function (element) {
-    element.dataset.squaredNumbers = element.dataset.number * element.dataset.number;
-    console.log(element);
+const squaredNumbers = () => {
+  document.querySelectorAll('.number').forEach(elem => {
+    const squared = elem.dataset.number ** 2;
+    elem.dataset.squared = squared;
   });
-}
+};
 
 // squaredNumbers();
 
