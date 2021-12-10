@@ -1,10 +1,10 @@
-const squaredNumbers = () => {
+export const squaredNumbers = () => {
   const listItem = Array.from(document.querySelectorAll('.number')).map (el => {
     const listNum = el.dataset.number * el.dataset.number;
     el.dataset.squaredNumbers = listNum;
   })
 }
-export { squaredNumbers };
+
 squaredNumbers()
 
 // function squaredNumbers() {
