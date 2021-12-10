@@ -1,11 +1,13 @@
 export const squaredNumbers = () => {
-  const listItem = Array.from(document.querySelectorAll('.number')).map (el => {
+  const listItem = Array.from(document.querySelectorAll('.number')).map(el => {
     const listNum = el.dataset.number * el.dataset.number;
-    el.dataset.squaredNumbers = listNum;
-  })
-}
+    el.setAttribute('data-squared-number', listNum);
+    return el;
+  });
+  return listItem;
+};
 
-squaredNumbers()
+squaredNumbers();
 
 // function squaredNumbers() {
 //   const square = document.querySelectorAll('.number')
