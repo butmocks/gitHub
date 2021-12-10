@@ -1,12 +1,11 @@
 const squaredNumbers = () => {
-  const listItem = Array.from(document.querySelectorAll('.number')).map(el => {
+  const listItem = Array.from(document.querySelectorAll('.number')).map (el => {
     const listNum = el.dataset.number * el.dataset.number;
     el.dataset.squaredNumbers = listNum;
-    console.log(listNum);
-  });
-};
+  })
+}
 export { squaredNumbers };
-// squaredNumbers()
+squaredNumbers()
 
 // function squaredNumbers() {
 //   const square = document.querySelectorAll('.number')
