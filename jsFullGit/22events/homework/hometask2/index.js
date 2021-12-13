@@ -1,6 +1,6 @@
 
 function makeEvent() {
-  console.log('done');
+  alert('done');
 }
 const findEl = document.querySelector('.create-btn');
 findEl.addEventListener('click', makeEvent);
