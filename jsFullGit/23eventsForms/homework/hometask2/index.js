@@ -26,7 +26,7 @@ const getSectorLines = () => {
       lineNumber => `
     <div
       class="sector__line"
-      data-sector-number="${lineNumber}"
+      data-line-number="${lineNumber}"
       >${seatsString}</div>
     `).join('');
 };
