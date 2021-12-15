@@ -4,9 +4,13 @@ const passwordInputElem = document.querySelector('#password');
 const emailErrorElem = document.querySelector('#error-text_email');
 const passwordErrorElem = document.querySelector('#error-text_password');
 
-const isRequired = value => (value ? undefined : 'Required');
+const isRequired = value => value
+? undefined
+: 'Required';
 
-const isEmail = value => (value.includes('@') ? undefined : 'Should be an email');
+const isEmail = value => (value.includes('@')
+? undefined
+: 'Should be an email';
 
 const validatorsByField = {
   email: [isRequired, isEmail],
@@ -15,7 +19,7 @@ const validatorsByField = {
 
 const validate = (fieldName, value) => {
   const validators = validatorsByField[fieldName];
-  return [isRequired, isEmail]
+  return validators
     .map(validator => validator(value))
     .filter(errorText => errorText)
     .join(', ');
@@ -40,11 +44,14 @@ const formElem = document.querySelector('.login-form');
 
 const onFormSubmit = event => {
   event.preventDefault();
-  const formData = [...new FormData(formElem)].reduce(
-    (acc, [field, value]) => ({ ...acc, [field]: value }),
-    {},
-  );
-  alert(JSON.stringify(formData));
+  const formData = Object.fromEntries(new formData(formElem))
+  alert(JSON.stringify(formData))
+
+  // const formData = [...new FormData(formElem)].reduce(
+  //   (acc, [field, value]) => ({ ...acc, [field]: value }),
+  //   {},
+  // );
+  // alert(JSON.stringify(formData));
 };
 
 formElem.addEventListener('submit', onFormSubmit);
