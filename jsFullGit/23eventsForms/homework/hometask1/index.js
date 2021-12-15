@@ -8,7 +8,7 @@ const isRequired = value => value
 ? undefined
 : 'Required';
 
-const isEmail = value => (value.includes('@')
+const isEmail = value => value.includes('@')
 ? undefined
 : 'Should be an email';
 
