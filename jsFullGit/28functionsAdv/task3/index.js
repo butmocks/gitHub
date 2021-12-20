@@ -1,6 +1,10 @@
-const mult = numberOne => numberTwo => numberOne * numberTwo;
-const twice = numberOne => mult(numberOne)(2);
-const triple = numberOne => mult(numberOne)(3);
-console.log(twice(4));
-console.log(triple(4));
-console.log(mult(4)(2));
+
+// const sum = (a, b) => a + b;
+
+const sum = a => b => a + b;
+
+const add3 = sum(3);
+
+const result = add3(5);
+
+console.log(result)

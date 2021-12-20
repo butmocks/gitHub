@@ -1,3 +1,27 @@
+const favorites = ['id-6', 'id-17'];
+const tree = {
+  id: 'id-1',
+  name: 'Products',
+  nodes: [
+    {
+      id: 'id-2',
+      name: 'Food',
+      nodes: [
+        {
+          id: 'id-6',
+          name: 'Drinks',
+          nodes: [],
+        },
+      ],
+    },
+    {
+      id: 'id-17',
+      name: 'Vehicles',
+      nodes: [],
+    },
+  ],
+};
+
 function markFavorites(tree, favorites) {
   const isFavorite = favorites.includes(tree.id);
   return {
@@ -7,16 +31,5 @@ function markFavorites(tree, favorites) {
   };
 }
 
-// const favorites = ['id-2'];
-// const tree = {
-//   id: 'id-1',
-//   name: 'Products',
-//   nodes: [
-//     {
-//       id: 'id-2',
-//       name: 'Food',
-//       nodes: [],
-//     },
-//   ],
-// };
-// console.log(markFavorites(tree, favorites));
+const result = markFavorites(tree, favorites);
+console.log(result)

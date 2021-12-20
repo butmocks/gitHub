@@ -38,8 +38,8 @@ export const shmoment = data => {
 };
 
 // test data
-const testData = new Date(1989, 7, 7, 5, 3, 0);
+const testData = new Date(1989, 7, 7 5, 3, 0);
 console.log(testData);
 
-const result = shmoment(testData).add('days', 8).subtract('years', 1).result();
+const result = shmoment(testData).add('minutes', 8).subtract('years', 4).result();
 console.log(new Date(result));
