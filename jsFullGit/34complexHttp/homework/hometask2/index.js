@@ -1,39 +1,38 @@
 const baseUrl = 'https://61da71d5ce86530017e3cd56.mockapi.io/api/v1/users';
 
-export const getUsersList = () => {
+export function getUsersList() {
   return fetch(baseUrl).then(response => response.json());
-};
+}
 
-export const getUserById = userId => {
+export function getUserById(userId) {
   return fetch(`${baseUrl}/${userId}`).then(response => response.json());
-};
+}
 
-export const createUser = obj => {
+export function createUser(userData) {
   return fetch(baseUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
     },
-    body: JSON.stringify(obj),
+    body: JSON.stringify(userData),
   });
-};
+}
 
-export const updateUser = (userId, obj) => {
+export function deleteUser(userId) {
+  return fetch(`${baseUrl}/${userId}`, {
+    method: 'DELETE',
+  });
+}
+
+export function updateUser(userId, userData) {
   return fetch(`${baseUrl}/${userId}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
     },
-    body: JSON.stringify(obj),
+    body: JSON.stringify(userData),
   });
-};
-
-export const deleteUser = userId => {
-  return fetch(`${baseUrl}/${userId}`, {
-    method: 'DELETE',
-  });
-};
-
+}
 // examples
 getUsersList().then(users => {
   console.log(users); // array of the user objects [{'id':'1', 'firstName':'Grayce' ... }, {'id':'2', 'firstName':'Ara' ... }, ...]
