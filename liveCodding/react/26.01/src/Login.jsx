@@ -1,14 +1,14 @@
 import React from 'react';
 
-// input: 
-// output: 
+// input:
+// output:
 
-const Login = props => {
+const Login = ({onLogin}) => {
   return (
-    <button className="login btn" onLogin={this.handleLogin}>
+    <button className="login btn" onClick={onLogin}>
       Login
     </button>
   );
-}
+};
 
 export default Login;

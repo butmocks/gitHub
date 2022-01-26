@@ -22,7 +22,7 @@ class Auth extends React.Component {
     // input: obj
     // output: undef
     this.setState({
-      isLoadding: true,
+      isLoading: true,
     });
 
     setTimeout(() => {
@@ -30,28 +30,24 @@ class Auth extends React.Component {
         isLoading: false,
         isLoggedIn: true,
       });
-    }, 2000)
+    }, 2000);
   };
-
 
   state = {
     isLoggedIn: false,
-    isProcessing: false
+    isProcessing: false,
+  };
+
+  render() {
+    const { isLoggedIn, isLoading } = this.state;
+
+    if (isLoading) {
+      return <Spinner />;
+    }
+    if (isLoggedIn) {
+      return <Logout onLogout={this.handleLogoutClick} />;
+    }
+    return <Login onLogin={this.handleLoginClick} />;
   }
-
-render() {
-  const {isLoggedIn, isLoading } = this.state;
-
-  if(isLoading) {
-    return <Spinner />;
-  }
-
-  if(isLoggedIn) {
-    return <logout />
-  }
-
-
-  return <Login onLogin={this.handleLoginClick} />
-};
-
+}
 export default Auth;
