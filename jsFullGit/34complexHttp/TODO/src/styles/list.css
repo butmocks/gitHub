@@ -1,11 +1,6 @@
 .todo-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-top: 32px;
   background-color: coral;
   border-radius: 8px;
@@ -21,40 +16,30 @@
   margin: auto;
   width: 100%;
 }
-
 .list__item {
   margin-bottom: 8px;
 }
 
 .list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 40px;
   border-radius: 8px;
   background-color: wheat;
   padding: 8px;
 }
-
 .list-item_done {
   opacity: 0.7;
 }
-
 .list-item_done .list-item__text {
   text-decoration: line-through;
 }
-
 .list-item:last-child {
   margin-bottom: 0;
 }
-
 .list-item__checkbox {
   margin-right: 8px;
 }
-
 .list-item__delete-btn {
   width: 24px;
   height: 24px;
@@ -66,16 +51,14 @@
   margin-left: auto;
   text-decoration: none;
   padding: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   font-size: 18px;
   line-height: 24px;
   text-align: center;
   opacity: 0.7;
 }
-
 .list-item__delete-btn::before {
-  content: '+';
+  content: "+";
 }
 
 .btn {
@@ -89,8 +72,6 @@
 }
 
 .actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 8px;
 }
@@ -99,8 +80,5 @@
   height: 32px;
   border: 3px solid #ccc;
   border-radius: 8px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-/*# sourceMappingURL=list.css.map */
+  flex: 1;
+}/*# sourceMappingURL=list.css.map */

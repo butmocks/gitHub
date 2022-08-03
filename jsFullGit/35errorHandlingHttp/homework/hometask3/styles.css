@@ -1,49 +1,31 @@
 .page {
   font-family: Arial, Helvetica, sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100vw;
   height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .user {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .user__avatar {
   width: 320px;
   height: 320px;
   border-radius: 50%;
 }
-
 .user__info {
   text-align: center;
   font-size: 24px;
   margin: 32px;
 }
-
 .user__name {
   font-weight: 700;
 }
-
 .user__location {
   opacity: 0.5;
 }
@@ -51,14 +33,11 @@
 .name-form {
   margin: 32px auto;
 }
-
 .name-form__input {
   height: 32px;
   border: 3px solid #ccc;
   border-radius: 8px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   outline: none;
 }
 
@@ -74,17 +53,13 @@
 
 .repo-list {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 600px;
   width: 100%;
   padding: 0;
   margin: 0;
 }
-
 .repo-list__item {
   max-width: 100px;
   overflow: hidden;
@@ -102,26 +77,21 @@
 
 @-webkit-keyframes rotate {
   from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 .spinner {
   display: block;
   width: 32px;
@@ -132,8 +102,6 @@
   -webkit-animation: rotate 1s linear infinite;
           animation: rotate 1s linear infinite;
 }
-
 .spinner_hidden {
   display: none;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

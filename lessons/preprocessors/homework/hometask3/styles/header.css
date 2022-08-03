@@ -6,42 +6,28 @@
 .menu {
   margin: 0 0 0 0;
   padding: 0 0 0 3em;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   height: 3em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .menu__item {
   text-transform: uppercase;
   padding: 0 8px 0 8px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 3em;
   color: #fff;
 }
-
 .menu__item-text {
   display: inline-block;
 }
-
 .menu__item:hover {
   background-color: #9acd32;
 }
-
 .menu__item_active {
   color: yellow;
 }
-
 .menu__item_active:hover .submenu {
   display: inline-block;
 }
@@ -49,8 +35,7 @@
 .submenu {
   display: none;
   background-color: #ff7f50;
-  -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   list-style-type: none;
   padding: 0;
   color: #fff;
@@ -60,8 +45,6 @@
   top: 48px;
   left: 133px;
 }
-
 .submenu__item {
   padding: 0 8px 0 8px;
-}
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */
