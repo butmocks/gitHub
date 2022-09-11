@@ -1,4 +1,4 @@
-fetch('https://appi.github.com/users/github')
+fetch('https://api.github.com/users/github')
   .then(response => {
     debugger;
     if (response === 200) {
